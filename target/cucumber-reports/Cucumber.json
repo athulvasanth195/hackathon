@@ -1,0 +1,238 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2526069629,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "loginPageSteps.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6392711,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is at login page",
+            "match": {
+              "location": "loginPageSteps.theUserIsAtLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-11-12T17:46:11.337Z",
+        "line": 8,
+        "name": "Make sure all UI components are present in the page",
+        "description": "",
+        "id": "customer-login;make-sure-all-ui-components-are-present-in-the-page",
+        "after": [
+          {
+            "result": {
+              "duration": 71459604,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 112480949,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "check whether header \"Login Form\" is present in the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login Form\"",
+                  "offset": 21
+                }
+              ],
+              "location": "loginPageSteps.checkWetherHeaderIsPresentInThePage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48473571,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "check whether header image Blue and white circles are present in the page",
+            "match": {
+              "location": "loginPageSteps.checkWetherHeaderImageBlueAndWhiteCirclesArePresentInThePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38001917,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "check whether \"Username\" username field header is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username\"",
+                  "offset": 14
+                }
+              ],
+              "location": "loginPageSteps.checkWheatherUsernameFieldHeaderIsPresent(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68198963,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "checks whether username image is present",
+            "match": {
+              "location": "loginPageSteps.checksWhetherUsernameImageIsPresent()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50956359,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "checks whether username field is present",
+            "match": {
+              "location": "loginPageSteps.checksWheatherUsernameFieldIsPresent()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50639129,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "check whether \"Password\" password field header is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password\"",
+                  "offset": 14
+                }
+              ],
+              "location": "loginPageSteps.checkWhetherPasswordFieldHeaderIsPresent(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23682801,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "checks whether password image is present",
+            "match": {
+              "location": "loginPageSteps.checksWhetherPasswordImageIsPresent()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26923925,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "checks whether password field is present",
+            "match": {
+              "location": "loginPageSteps.checksWheatherPasswordFieldIsPresent()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143416630,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "checks whether \"Log In\" login button is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Log In\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.checksWhetherButtonIsPresent(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150716682,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "checks whether \"Remember Me\" check box is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Remember Me\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.checksWhetherCheckBoxIsPresent(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178373216,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "checks whether all social media icons are present",
+            "match": {
+              "location": "loginPageSteps.checksWhetherAllSocialMediaIconsArePresent()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Customer login",
+    "description": "",
+    "id": "customer-login",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/featureList/loginpage.feature",
+    "tags": []
+  }
+]
