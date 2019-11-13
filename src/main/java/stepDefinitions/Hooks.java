@@ -3,7 +3,7 @@ package stepDefinitions;
 import cucumber.TestContext;
 import io.cucumber.java.After;
 
-public class Hooks {
+public class gitHooks {
 
 	TestContext testContext;
 

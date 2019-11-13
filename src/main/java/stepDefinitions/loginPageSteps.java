@@ -3,6 +3,7 @@ package stepDefinitions;
 import cucumber.TestContext;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import managers.ApplitoolManager;
 import pageObjects.loginPage;
 
 public class loginPageSteps {
@@ -76,5 +77,65 @@ public class loginPageSteps {
     @And("checks whether password image is present")
     public void checksWhetherPasswordImageIsPresent() {
         loginpage.WhetherPasswordImageIsPresent();
+    }
+
+    @And("compare login page UI using applitools")
+    public void compareLoginPageScreenshotUsingApplitools() {
+        loginpage.LoginPageScreenshotUsingApplitools();
+    }
+
+    @And("clicks on login button")
+    public void clicksOnLoginButton() {
+        loginpage.clickLoginButton();
+    }
+
+    @Then("password and username empty {string} error is shown")
+    public void passwordAndUsernameEmptyErrorIsShown(String Warning) {
+        loginpage.fieldEmtyWarmingIsShown(Warning);
+    }
+
+    @And("enter username {string} in username feild")
+    public void enterUsernameInUsernameFeild(String username) {
+        loginpage.enterUsername(username);
+    }
+
+    @Then("password is mandatory {string} error is shown")
+    public void passwordIsMandatoryErrorIsShown(String Warning) {
+        loginpage.passwordFeildEmptyWarningShown(Warning);
+    }
+
+    @And("enter password {string} in password field")
+    public void enterPasswordInPasswordField(String password) {
+        loginpage.enterPassword(password);
+    }
+
+    @Then("username is mandatory {string} error is shown")
+    public void usernameIsMandatoryErrorIsShown(String Warning) {
+        loginpage.usernameFeildEmptyWarningShown(Warning);
+    }
+
+    @Then("user is logged in")
+    public void userIsLoggedIn() {
+        loginpage.assertHomePageUrl();
+    }
+
+    @Then("compare password and username empty screenshot.")
+    public void comparePasswordAndUsernameEmptyScreenshot() {
+        loginpage.PasswordAndUsernameEmptyScreenshot();
+    }
+
+    @Then("compare password is mandatory screenshot")
+    public void comparePasswordIsMandatoryScreenshot() {
+        loginpage.PasswordIsMandatoryScreenshot();
+    }
+
+    @Then("compare usename is mandatory screenshot")
+    public void compareUsenameIsMandatoryScreenshot() {
+        loginpage.UsenameIsMandatoryScreenshot();
+    }
+
+    @Then("user is logged in by comparing dashboard layout")
+    public void userIsLoggedInByComparingDashboardLayout() {
+        loginpage.LoggedInByComparingDashboardLayout();
     }
 }

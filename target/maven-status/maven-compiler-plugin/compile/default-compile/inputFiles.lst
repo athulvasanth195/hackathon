@@ -4,3 +4,4 @@
 /home/athul/IdeaProjects/hackathon/src/main/java/pageObjects/loginPage.java
 /home/athul/IdeaProjects/hackathon/src/main/java/stepDefinitions/loginPageSteps.java
 /home/athul/IdeaProjects/hackathon/src/main/java/managers/PageObjectManager.java
+/home/athul/IdeaProjects/hackathon/src/main/java/managers/ApplitoolManager.java

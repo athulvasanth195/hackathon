@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2526069629,
+              "duration": 2712093856,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 6392711,
+              "duration": 17069670,
               "status": "passed"
             },
             "line": 5,
@@ -36,15 +36,15 @@
         ]
       },
       {
-        "start_timestamp": "2019-11-12T17:46:11.337Z",
-        "line": 8,
-        "name": "Make sure all UI components are present in the page",
+        "start_timestamp": "2019-11-13T15:30:14.248Z",
+        "line": 22,
+        "name": "Make sure all UI components are present in the page using applitools",
         "description": "",
-        "id": "customer-login;make-sure-all-ui-components-are-present-in-the-page",
+        "id": "customer-login;make-sure-all-ui-components-are-present-in-the-page-using-applitools",
         "after": [
           {
             "result": {
-              "duration": 71459604,
+              "duration": 67064668,
               "status": "passed"
             },
             "match": {
@@ -57,173 +57,237 @@
         "steps": [
           {
             "result": {
-              "duration": 112480949,
+              "duration": 12161384332,
               "status": "passed"
             },
-            "line": 9,
-            "name": "check whether header \"Login Form\" is present in the page",
+            "line": 23,
+            "name": "compare login page UI using applitools",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Login Form\"",
-                  "offset": 21
-                }
-              ],
-              "location": "loginPageSteps.checkWetherHeaderIsPresentInThePage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 48473571,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "check whether header image Blue and white circles are present in the page",
-            "match": {
-              "location": "loginPageSteps.checkWetherHeaderImageBlueAndWhiteCirclesArePresentInThePage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 38001917,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "check whether \"Username\" username field header is present",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Username\"",
-                  "offset": 14
-                }
-              ],
-              "location": "loginPageSteps.checkWheatherUsernameFieldHeaderIsPresent(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 68198963,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "checks whether username image is present",
-            "match": {
-              "location": "loginPageSteps.checksWhetherUsernameImageIsPresent()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50956359,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "checks whether username field is present",
-            "match": {
-              "location": "loginPageSteps.checksWheatherUsernameFieldIsPresent()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50639129,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "check whether \"Password\" password field header is present",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Password\"",
-                  "offset": 14
-                }
-              ],
-              "location": "loginPageSteps.checkWhetherPasswordFieldHeaderIsPresent(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23682801,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "checks whether password image is present",
-            "match": {
-              "location": "loginPageSteps.checksWhetherPasswordImageIsPresent()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 26923925,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "checks whether password field is present",
-            "match": {
-              "location": "loginPageSteps.checksWheatherPasswordFieldIsPresent()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 143416630,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "checks whether \"Log In\" login button is present",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Log In\"",
-                  "offset": 15
-                }
-              ],
-              "location": "loginPageSteps.checksWhetherButtonIsPresent(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 150716682,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "checks whether \"Remember Me\" check box is present",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Remember Me\"",
-                  "offset": 15
-                }
-              ],
-              "location": "loginPageSteps.checksWhetherCheckBoxIsPresent(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 178373216,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "checks whether all social media icons are present",
-            "match": {
-              "location": "loginPageSteps.checksWhetherAllSocialMediaIconsArePresent()"
+              "location": "loginPageSteps.compareLoginPageScreenshotUsingApplitools()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
+            "name": "@applitools"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2713015568,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "loginPageSteps.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@Regression"
+            "result": {
+              "duration": 17092606,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is at login page",
+            "match": {
+              "location": "loginPageSteps.theUserIsAtLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-11-13T15:30:14.248Z",
+        "line": 41,
+        "name": "Login page functionality using applitools",
+        "description": "",
+        "id": "customer-login;login-page-functionality-using-applitools",
+        "after": [
+          {
+            "result": {
+              "duration": 69070276,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 84481418,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "clicks on login button",
+            "match": {
+              "location": "loginPageSteps.clicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12076881436,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "compare password and username empty screenshot.",
+            "match": {
+              "location": "loginPageSteps.comparePasswordAndUsernameEmptyScreenshot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 144185631,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "enter username \"username\" in username feild",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterUsernameInUsernameFeild(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71517355,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "clicks on login button",
+            "match": {
+              "location": "loginPageSteps.clicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5065330653,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "compare password is mandatory screenshot",
+            "match": {
+              "location": "loginPageSteps.comparePasswordIsMandatoryScreenshot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 68404722,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "enter password \"password\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterPasswordInPasswordField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1964937005,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "clicks on login button",
+            "match": {
+              "location": "loginPageSteps.clicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6515312931,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "compare usename is mandatory screenshot",
+            "match": {
+              "location": "loginPageSteps.compareUsenameIsMandatoryScreenshot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#username\"}\n  (Session info: chrome\u003d78.0.3904.97)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027QB-KRT-10118\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.2.21-1-MANJARO\u0027, java.version: \u00271.8.0_232\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.10 (bc3579f611bbc..., userDataDir: /tmp/.com.google.Chrome.szwVqJ}, goog:chromeOptions: {debuggerAddress: localhost:37189}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 17ecb0b4e7b355169faf938f5b07cd19\n*** Element info: {Using\u003did, value\u003dusername}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.clear(Unknown Source)\n\tat pageObjects.loginPage.enterUsername(loginPage.java:157)\n\tat stepDefinitions.loginPageSteps.enterUsernameInUsernameFeild(loginPageSteps.java:99)\n\tat ✽.enter username \"username\" in username feild(file:src/main/resources/featureList/loginpage.feature:50)\n",
+              "duration": 17288837,
+              "status": "failed"
+            },
+            "line": 50,
+            "name": "enter username \"username\" in username feild",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterUsernameInUsernameFeild(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5343,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "enter password \"password\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterPasswordInPasswordField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1996,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "user is logged in by comparing dashboard layout",
+            "match": {
+              "location": "loginPageSteps.userIsLoggedInByComparingDashboardLayout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@applitools"
           }
         ]
       }

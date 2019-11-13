@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 
-@CucumberOptions(features = "src/main/resources/featureList", glue = { "" },plugin = {
+@CucumberOptions(features = "src/main/resources/featureList",tags= {"@applitools"}, glue = { "" },plugin = {
         "pretty", "json:target/cucumber-reports/Cucumber.json"})
 
 

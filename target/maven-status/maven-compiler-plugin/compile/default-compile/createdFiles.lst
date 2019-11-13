@@ -1,4 +1,5 @@
 pageObjects/loginPage.class
+managers/ApplitoolManager.class
 cucumber/TestContext.class
 managers/PageObjectManager.class
 stepDefinitions/Hooks.class

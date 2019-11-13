@@ -1,5 +1,9 @@
 package pageObjects;
 
+import com.applitools.eyes.BatchInfo;
+import com.applitools.eyes.MatchLevel;
+import com.sun.swing.internal.plaf.basic.resources.basic_zh_TW;
+import managers.ApplitoolManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,10 +13,16 @@ import org.testng.Assert;
 public class loginPage {
 
     private WebDriver driver;
+    ApplitoolManager applitools=new ApplitoolManager();
+    private static BatchInfo batch1;
+    private static BatchInfo batch2;
+
 
     public loginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        batch1=new BatchInfo("Login page UI");
+        batch2=new BatchInfo("Login page functionality");
     }
 
     @FindBy(className = "auth-header")
@@ -56,6 +66,10 @@ public class loginPage {
 
     @FindBy(xpath = "//*[@style=\"text-align:center\"]/a[3]/img")
     private WebElement img_linkdin;
+
+    @FindBy(xpath = "//*[contains(@id, \"random_id\")]")
+    private WebElement war_login;
+
 
     public void get_login_page() {
         driver.get("https://demo.applitools.com/hackathon.html");
@@ -121,4 +135,81 @@ public class loginPage {
         Assert.assertTrue(img_password.isDisplayed(), "Missing password image");
     }
 
+    public void LoginPageScreenshotUsingApplitools() {
+        applitools.getEyes().setBatch(batch1);
+        applitools.getEyes().setForceFullPageScreenshot(true);
+        applitools.getEyes().open(driver, "Hackathon",
+                "login UI components");
+        applitools.getEyes().checkWindow("Login Window");
+        applitools.getEyes().close();
+
+    }
+
+    public void clickLoginButton() {
+        btn_login.click();
+    }
+
+    public void fieldEmtyWarmingIsShown(String warning) {
+        Assert.assertEquals(war_login.getText(), warning, "username and password empty warning mismatch found");
+    }
+
+    public void enterUsername(String username) {
+        txt_bx_username.clear();
+        txt_bx_username.sendKeys(username);
+    }
+
+    public void enterPassword(String password) {
+        txt_bx_password.clear();
+        txt_bx_password.sendKeys(password);
+    }
+
+    public void passwordFeildEmptyWarningShown(String warning) {
+        Assert.assertEquals(war_login.getText(), warning, "password field empty warning mismatch found");
+        txt_bx_username.clear();
+    }
+
+    public void usernameFeildEmptyWarningShown(String warning) {
+        Assert.assertEquals(war_login.getText(), warning, "username field empty warning mismatch found");
+        txt_bx_password.clear();
+    }
+
+    public void assertHomePageUrl() {
+        Assert.assertEquals(driver.getCurrentUrl(),"https://demo.applitools.com/hackathonApp.html","User login failed. dashbord URL mismatch found");
+    }
+
+    public void PasswordAndUsernameEmptyScreenshot() {
+        applitools.getEyes().setBatch(batch2);
+        applitools.getEyes().setForceFullPageScreenshot(true);
+        applitools.getEyes().open(driver, "Hackathon",
+                "Login page username and password empty");
+        applitools.getEyes().checkWindow("username and password empty");
+        applitools.getEyes().close();
+    }
+
+    public void PasswordIsMandatoryScreenshot() {
+        applitools.getEyes().setBatch(batch2);
+        applitools.getEyes().setForceFullPageScreenshot(true);
+        applitools.getEyes().open(driver, "Hackathon",
+                "Login page password empty");
+        applitools.getEyes().checkWindow("password empty");
+        applitools.getEyes().close();
+    }
+
+    public void UsenameIsMandatoryScreenshot() {
+        applitools.getEyes().setBatch(batch2);
+        applitools.getEyes().setForceFullPageScreenshot(true);
+        applitools.getEyes().open(driver, "Hackathon",
+                "Login page username empty");
+        applitools.getEyes().checkWindow("username empty");
+        applitools.getEyes().close();
+    }
+
+    public void LoggedInByComparingDashboardLayout() {
+        applitools.getEyes().setBatch(batch2);
+        applitools.getEyes().setForceFullPageScreenshot(true);
+        applitools.getEyes().open(driver, "Hackathon",
+                "Login page functionality dashbord layout");
+        applitools.getEyes().checkWindow("dashbord layout");
+        applitools.getEyes().close();
+    }
 }
