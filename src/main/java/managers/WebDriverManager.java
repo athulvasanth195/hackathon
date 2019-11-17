@@ -22,10 +22,11 @@ public class WebDriverManager {
     }
 
     private WebDriver createLocalDriver() {
-                System.setProperty(CHROME_DRIVER_PROPERTY, "chromedriver");
-                driver = new ChromeDriver();
+        System.setProperty(CHROME_DRIVER_PROPERTY, "chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
         return driver;
-        }
+    }
 
     public void closeDriver() {
         driver.quit();

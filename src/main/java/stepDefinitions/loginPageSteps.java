@@ -2,84 +2,80 @@ package stepDefinitions;
 
 import cucumber.TestContext;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import managers.ApplitoolManager;
 import pageObjects.loginPage;
 
 public class loginPageSteps {
 
-    TestContext testContext;
-    loginPage loginpage;
+private TestContext testContext;
+ private loginPage loginpage;
+
     public loginPageSteps(TestContext context) {
         testContext = context;
         loginpage = testContext.getPageObjectManager().getLoginPage();
     }
-    @Then("^the user is on the login page$")
+    @Given("^Jack is on the login page$")
     public void user_is_on_the_login_page() {
         loginpage.get_login_page();
     }
 
-    @Then("the user is at login page")
-    public void theUserIsAtLoginPage() {
-        loginpage.assertLoginUrl();
-    }
-
-    @And("check whether header {string} is present in the page")
-    public void checkWetherHeaderIsPresentInThePage(String header) {
+    @Then("header {string} is present in the page")
+    public void checkWhetherHeaderIsPresentInThePage(String header) {
         loginpage.WhetherHeaderIsPresentInThePage(header);
     }
 
-    @And("check whether header image Blue and white circles are present in the page")
-    public void checkWetherHeaderImageBlueAndWhiteCirclesArePresentInThePage() {
+    @Then("header image Blue and white circles are present in the page")
+    public void checkWhetherHeaderImageBlueAndWhiteCirclesArePresentInThePage() {
         loginpage.WhetherHeaderImageBlueAndWhiteCirclesArePresentInThePage();
     }
 
-    @And("checks whether username field is present")
-    public void checksWheatherUsernameFieldIsPresent() {
+    @Then("username field is present")
+    public void checksWhetherUsernameFieldIsPresent() {
         loginpage.WhetherUsernameFieldIsPresent();
     }
 
-    @And("checks whether password field is present")
-    public void checksWheatherPasswordFieldIsPresent() {
+    @Then("password field is present")
+    public void checksWhetherPasswordFieldIsPresent() {
         loginpage.WhetherPasswordFieldIsPresent();
     }
 
-    @And("checks whether {string} login button is present")
+    @Then("{string} login button is present")
     public void checksWhetherButtonIsPresent(String header) {
         loginpage.WhetherLoginButtonIsPresent(header);
     }
 
-    @And("checks whether {string} check box is present")
+    @Then("{string} check box is present")
     public void checksWhetherCheckBoxIsPresent(String header) {
         loginpage.WhetherCheckBoxIsPresent(header);
     }
 
-    @And("checks whether all social media icons are present")
+    @Then("all social media icons are present")
     public void checksWhetherAllSocialMediaIconsArePresent() {
         loginpage.WhetherAllSocialMediaIconsArePresent();
     }
 
-    @And("check whether {string} password field header is present")
+    @Then("{string} password field header is present")
     public void checkWhetherPasswordFieldHeaderIsPresent(String header) {
         loginpage.WhetherPasswordFieldHeaderIsPresent(header);
     }
 
-    @And("check whether {string} username field header is present")
+    @Then("{string} username field header is present")
     public void checkWheatherUsernameFieldHeaderIsPresent(String header) {
         loginpage.WhetherUsernameFieldHeaderIsPresent(header);
     }
 
-    @And("checks whether username image is present")
+    @And("username image is present")
     public void checksWhetherUsernameImageIsPresent() {
         loginpage.WhetherUsernameImageIsPresent();
     }
 
-    @And("checks whether password image is present")
+    @And("password image is present")
     public void checksWhetherPasswordImageIsPresent() {
         loginpage.WhetherPasswordImageIsPresent();
     }
 
-    @And("compare login page UI using applitools")
+    @And("login page screenshot is in align with applitools baseline")
     public void compareLoginPageScreenshotUsingApplitools() {
         loginpage.LoginPageScreenshotUsingApplitools();
     }
@@ -94,8 +90,8 @@ public class loginPageSteps {
         loginpage.fieldEmtyWarmingIsShown(Warning);
     }
 
-    @And("enter username {string} in username feild")
-    public void enterUsernameInUsernameFeild(String username) {
+    @And("enter username {string} in username field")
+    public void enterUsernameInUsernameField(String username) {
         loginpage.enterUsername(username);
     }
 
@@ -114,7 +110,7 @@ public class loginPageSteps {
         loginpage.usernameFeildEmptyWarningShown(Warning);
     }
 
-    @Then("user is logged in")
+    @Then("Jack is on website dashboard")
     public void userIsLoggedIn() {
         loginpage.assertHomePageUrl();
     }
@@ -129,8 +125,8 @@ public class loginPageSteps {
         loginpage.PasswordIsMandatoryScreenshot();
     }
 
-    @Then("compare usename is mandatory screenshot")
-    public void compareUsenameIsMandatoryScreenshot() {
+    @Then("compare username is mandatory screenshot")
+    public void compareUsernameIsMandatoryScreenshot() {
         loginpage.UsenameIsMandatoryScreenshot();
     }
 
@@ -138,4 +134,9 @@ public class loginPageSteps {
     public void userIsLoggedInByComparingDashboardLayout() {
         loginpage.LoggedInByComparingDashboardLayout();
     }
+
+    @And("clear username field")
+    public void clearUsernameFeild() {
+        loginpage.UsernameFieldclear();}
+
 }

@@ -3,9 +3,9 @@ package stepDefinitions;
 import cucumber.TestContext;
 import io.cucumber.java.After;
 
-public class gitHooks {
+public class Hooks {
 
-	TestContext testContext;
+	private TestContext testContext;
 
 	public Hooks(TestContext context) {
 		testContext = context;
@@ -13,6 +13,7 @@ public class gitHooks {
 
 	@After
 	public void AfterSteps() {
+		testContext.getApplitoolManager().closeEyes();
 		testContext.getWebDriverManager().closeDriver();
 	}
 

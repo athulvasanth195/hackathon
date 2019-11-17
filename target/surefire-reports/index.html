@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runnerFiles.TestRunner" hash-for-method="runScenario(&quot;Login page functionality using applitools&quot;, &quot;Customer login&quot;)">runScenario("Login page functionality using applitools", "Customer login")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runnerFiles.TestRunner" hash-for-method="runScenario(&quot;Make sure all UI components are present in the page using applitools&quot;, &quot;Customer login&quot;)">runScenario("Make sure all UI components are present in the page using applitools", "Customer login")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runnerFiles.TestRunner" hash-for-method="runScenario(&quot;As customer Jack wants to sort dashboard table in ascending order of amounts&quot;, &quot;As an existing cust...)">runScenario("As customer Jack wants to sort dashboard table in ascending order of amounts", "As an existing cust...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runnerFiles.TestRunner" hash-for-method="runScenario(&quot;Login page functionality using applitools&quot;, &quot;As an existing customer verify the UI and Functionalit...)">runScenario("Login page functionality using applitools", "As an existing customer verify the UI and Functionalit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runnerFiles.TestRunner" hash-for-method="runScenario(&quot;As customer Jack wants to see expense charts for year 2018 and 2019&quot;, &quot;As an existing customer veri...)">runScenario("As customer Jack wants to see expense charts for year 2018 and 2019", "As an existing customer veri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runnerFiles.TestRunner" hash-for-method="runScenario(&quot;As an existing customer Mr John is at login page&quot;, &quot;As an existing customer verify the UI and Funct...)">runScenario("As an existing customer Mr John is at login page", "As an existing customer verify the UI and Funct...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -131,51 +132,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">runnerFiles.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login page functionality using applitools&quot;, &quot;Customer login&quot;)">
-                  </a> <!-- runScenario("Login page functionality using applitools", "Customer login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login page functionality using applitools", "Customer login")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
-  (Session info: chrome=78.0.3904.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;QB-KRT-10118&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.2.21-1-MANJARO&apos;, java.version: &apos;1.8.0_232&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.10 (bc3579f611bbc..., userDataDir: /tmp/.com.google.Chrome.szwVqJ}, goog:chromeOptions: {debuggerAddress: localhost:37189}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 17ecb0b4e7b355169faf938f5b07cd19
-*** Element info: {Using=id, value=username}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.clear(Unknown Source)
-	at pageObjects.loginPage.enterUsername(loginPage.java:157)
-	at stepDefinitions.loginPageSteps.enterUsernameInUsernameFeild(loginPageSteps.java:99)
-	at ✽.enter username &quot;username&quot; in username feild(file:src/main/resources/featureList/loginpage.feature:50)
-... Removed 4 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -184,10 +140,40 @@ Session ID: 17ecb0b4e7b355169faf938f5b07cd19
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Make sure all UI components are present in the page using applitools&quot;, &quot;Customer login&quot;)">
-                  </a> <!-- runScenario("Make sure all UI components are present in the page using applitools", "Customer login") -->
+                  <a name="runScenario(&quot;As customer Jack wants to sort dashboard table in ascending order of amounts&quot;, &quot;As an existing cust...)">
+                  </a> <!-- runScenario("As customer Jack wants to sort dashboard table in ascending order of amounts", "As an existing cust...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Make sure all UI components are present in the page using applitools", "Customer login")</span>
+                  <span class="parameters">("As customer Jack wants to sort dashboard table in ascending order of amounts", "As an existing customer verify the UI and Functionality of the login page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login page functionality using applitools&quot;, &quot;As an existing customer verify the UI and Functionalit...)">
+                  </a> <!-- runScenario("Login page functionality using applitools", "As an existing customer verify the UI and Functionalit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login page functionality using applitools", "As an existing customer verify the UI and Functionality of the login page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;As customer Jack wants to see expense charts for year 2018 and 2019&quot;, &quot;As an existing customer veri...)">
+                  </a> <!-- runScenario("As customer Jack wants to see expense charts for year 2018 and 2019", "As an existing customer veri...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("As customer Jack wants to see expense charts for year 2018 and 2019", "As an existing customer verify the UI and Functionality of the login page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;As an existing customer Mr John is at login page&quot;, &quot;As an existing customer verify the UI and Funct...)">
+                  </a> <!-- runScenario("As an existing customer Mr John is at login page", "As an existing customer verify the UI and Funct...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("As an existing customer Mr John is at login page", "As an existing customer verify the UI and Functionality of the login page")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -203,7 +189,7 @@ Session ID: 17ecb0b4e7b355169faf938f5b07cd19
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; data-provider-thread-count=&quot;3&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; data-provider-thread-count=&quot;5&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;runnerFiles.TestRunner&quot;/&gt;
@@ -254,20 +240,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runnerFiles.TestRunner')
-data.setCell(0, 3, 28913);
+data.setCell(0, 3, 39918);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runnerFiles.TestRunner')
-data.setCell(1, 3, 15063);
+data.setCell(1, 3, 26081);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runnerFiles.TestRunner')
+data.setCell(2, 3, 19706);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runnerFiles.TestRunner')
+data.setCell(3, 3, 18574);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -299,18 +293,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Make sure all UI components are present in the page using applitools", "Customer login")</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-name">runScenario("As an existing customer Mr John is at login page", "As an existing customer verify the UI and Funct...)</span>
+                <span class="method-start">77 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Login page functionality using applitools", "Customer login")</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-name">runScenario("As customer Jack wants to sort dashboard table in ascending order of amounts", "As an existing cust...)</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("As customer Jack wants to see expense charts for year 2018 and 2019", "As an existing customer veri...)</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login page functionality using applitools", "As an existing customer verify the UI and Functionalit...)</span>
+                <span class="method-start">77 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">29003 ms</span>
+                <span class="method-start">39996 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

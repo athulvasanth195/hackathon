@@ -1,72 +1,59 @@
 package pageObjects;
 
 import com.applitools.eyes.BatchInfo;
-import com.applitools.eyes.MatchLevel;
-import com.sun.swing.internal.plaf.basic.resources.basic_zh_TW;
-import managers.ApplitoolManager;
+import com.applitools.eyes.selenium.Eyes;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class loginPage {
 
+public class loginPage {
     private WebDriver driver;
-    ApplitoolManager applitools=new ApplitoolManager();
+    private Eyes eyes;
     private static BatchInfo batch1;
     private static BatchInfo batch2;
 
-
-    public loginPage(WebDriver driver) {
+    public loginPage(WebDriver driver,Eyes eyes) {
         this.driver = driver;
+        this.eyes = eyes;
+
         PageFactory.initElements(driver, this);
+
         batch1=new BatchInfo("Login page UI");
         batch2=new BatchInfo("Login page functionality");
     }
 
+
     @FindBy(className = "auth-header")
     private WebElement header_login;
-
     @FindBy(xpath = "//a[@href=\"index.html\"]//img")
     private WebElement img_header;
-
     @FindBy(id = "username")
     private WebElement txt_bx_username;
-
     @FindBy(xpath = "//div[@class=\"pre-icon os-icon os-icon-user-male-circle\"]")
     private WebElement img_username;
-
     @FindBy(xpath = "//*[@id=\"username\"]/preceding-sibling::label")
     private WebElement header_username;
-
     @FindBy(id = "password")
     private WebElement txt_bx_password;
-
     @FindBy(xpath = "//*[@id=\"password\"]/preceding-sibling::label")
     private WebElement header_password;
-
     @FindBy(xpath = "//div[@class=\"pre-icon os-icon os-icon-fingerprint\"]")
     private WebElement img_password;
-
     @FindBy(id = "log-in")
     private WebElement btn_login;
-
     @FindBy(xpath = "//label[@class = \"form-check-label\"]/input")
     private WebElement chbox_remeberme_text;
-
     @FindBy(className = "form-check-label")
     private WebElement chbox_remeberme;
-
     @FindBy(xpath = "//*[@style=\"text-align:center\"]/a[1]/img")
     private WebElement img_twitter;
-
     @FindBy(xpath = "//*[@style=\"text-align:center\"]/a[2]/img")
     private WebElement img_facebook;
-
     @FindBy(xpath = "//*[@style=\"text-align:center\"]/a[3]/img")
     private WebElement img_linkdin;
-
     @FindBy(xpath = "//*[contains(@id, \"random_id\")]")
     private WebElement war_login;
 
@@ -136,12 +123,12 @@ public class loginPage {
     }
 
     public void LoginPageScreenshotUsingApplitools() {
-        applitools.getEyes().setBatch(batch1);
-        applitools.getEyes().setForceFullPageScreenshot(true);
-        applitools.getEyes().open(driver, "Hackathon",
+       eyes.setBatch(batch1);
+        eyes.setForceFullPageScreenshot(true);
+        eyes.open(driver, "Hackathon",
                 "login UI components");
-        applitools.getEyes().checkWindow("Login Window");
-        applitools.getEyes().close();
+        eyes.checkWindow("Login Window");
+
 
     }
 
@@ -165,7 +152,6 @@ public class loginPage {
 
     public void passwordFeildEmptyWarningShown(String warning) {
         Assert.assertEquals(war_login.getText(), warning, "password field empty warning mismatch found");
-        txt_bx_username.clear();
     }
 
     public void usernameFeildEmptyWarningShown(String warning) {
@@ -178,38 +164,37 @@ public class loginPage {
     }
 
     public void PasswordAndUsernameEmptyScreenshot() {
-        applitools.getEyes().setBatch(batch2);
-        applitools.getEyes().setForceFullPageScreenshot(true);
-        applitools.getEyes().open(driver, "Hackathon",
+       eyes.setBatch(batch2);
+       eyes.setForceFullPageScreenshot(true);
+       eyes.open(driver, "Hackathon",
                 "Login page username and password empty");
-        applitools.getEyes().checkWindow("username and password empty");
-        applitools.getEyes().close();
+       eyes.checkWindow("username and password empty");
+
     }
 
     public void PasswordIsMandatoryScreenshot() {
-        applitools.getEyes().setBatch(batch2);
-        applitools.getEyes().setForceFullPageScreenshot(true);
-        applitools.getEyes().open(driver, "Hackathon",
-                "Login page password empty");
-        applitools.getEyes().checkWindow("password empty");
-        applitools.getEyes().close();
+       eyes.setBatch(batch2);
+       eyes.setForceFullPageScreenshot(true);
+       eyes.checkWindow("password empty");
+
     }
 
     public void UsenameIsMandatoryScreenshot() {
-        applitools.getEyes().setBatch(batch2);
-        applitools.getEyes().setForceFullPageScreenshot(true);
-        applitools.getEyes().open(driver, "Hackathon",
-                "Login page username empty");
-        applitools.getEyes().checkWindow("username empty");
-        applitools.getEyes().close();
+       eyes.setBatch(batch2);
+       eyes.setForceFullPageScreenshot(true);
+       eyes.checkWindow("username empty");
+
     }
 
     public void LoggedInByComparingDashboardLayout() {
-        applitools.getEyes().setBatch(batch2);
-        applitools.getEyes().setForceFullPageScreenshot(true);
-        applitools.getEyes().open(driver, "Hackathon",
-                "Login page functionality dashbord layout");
-        applitools.getEyes().checkWindow("dashbord layout");
-        applitools.getEyes().close();
+       eyes.setBatch(batch2);
+       eyes.setForceFullPageScreenshot(true);
+       eyes.checkWindow("dashboard layout");
+
     }
+
+    public void UsernameFieldclear() {
+        txt_bx_username.clear();
+    }
+
 }

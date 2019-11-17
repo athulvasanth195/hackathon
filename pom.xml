@@ -12,7 +12,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.9.1</version>
+            <version>3.141.59</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -36,9 +36,9 @@
             <version>3.152.5</version>
         </dependency>
         <dependency>
-            <groupId>com.applitools</groupId>
-            <artifactId>eyes-selenium-java3</artifactId>
-            <version>3.152.5</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.1-jre</version>
         </dependency>
     </dependencies>
 

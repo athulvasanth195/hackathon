@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29084" started-at="2019-11-13T15:30:14Z" finished-at="2019-11-13T15:30:43Z">
+  <suite name="Suite" duration-ms="40051" started-at="2019-11-17T16:44:30Z" finished-at="2019-11-17T16:45:10Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.TestRunner@6574b225]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.TestRunner@5afa04c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="29084" started-at="2019-11-13T15:30:14Z" finished-at="2019-11-13T15:30:43Z">
+    <test name="Test" duration-ms="40051" started-at="2019-11-17T16:44:30Z" finished-at="2019-11-17T16:45:10Z">
       <class name="runnerFiles.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runnerFiles.TestRunner@6574b225]" name="setUpClass" is-config="true" duration-ms="48" started-at="2019-11-13T15:30:14Z" finished-at="2019-11-13T15:30:14Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runnerFiles.TestRunner@5afa04c]" name="setUpClass" is-config="true" duration-ms="45" started-at="2019-11-17T16:44:30Z" finished-at="2019-11-17T16:44:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.TestRunner@6574b225]" name="runScenario" duration-ms="15063" started-at="2019-11-13T15:30:14Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-13T15:30:29Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.TestRunner@5afa04c]" name="runScenario" duration-ms="19706" started-at="2019-11-17T16:44:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-17T16:44:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Make sure all UI components are present in the page using applitools"]]>
+                <![CDATA["As customer Jack wants to sort dashboard table in ascending order of amounts"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Customer login"]]>
+                <![CDATA["As an existing customer verify the UI and Functionality of the login page"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.TestRunner@6574b225]" name="runScenario" duration-ms="28913" started-at="2019-11-13T15:30:14Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-13T15:30:43Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.TestRunner@5afa04c]" name="runScenario" duration-ms="39918" started-at="2019-11-17T16:44:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-17T16:45:10Z">
           <params>
             <param index="0">
               <value>
@@ -39,59 +39,46 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Customer login"]]>
+                <![CDATA["As an existing customer verify the UI and Functionality of the login page"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
-  (Session info: chrome=78.0.3904.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QB-KRT-10118', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.2.21-1-MANJARO', java.version: '1.8.0_232'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.10 (bc3579f611bbc..., userDataDir: /tmp/.com.google.Chrome.szwVqJ}, goog:chromeOptions: {debuggerAddress: localhost:37189}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 17ecb0b4e7b355169faf938f5b07cd19
-*** Element info: {Using=id, value=username}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
-  (Session info: chrome=78.0.3904.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QB-KRT-10118', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.2.21-1-MANJARO', java.version: '1.8.0_232'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.10 (bc3579f611bbc..., userDataDir: /tmp/.com.google.Chrome.szwVqJ}, goog:chromeOptions: {debuggerAddress: localhost:37189}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 17ecb0b4e7b355169faf938f5b07cd19
-*** Element info: {Using=id, value=username}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.clear(Unknown Source)
-at pageObjects.loginPage.enterUsername(loginPage.java:157)
-at stepDefinitions.loginPageSteps.enterUsernameInUsernameFeild(loginPageSteps.java:99)
-at ✽.enter username "username" in username feild(file:src/main/resources/featureList/loginpage.feature:50)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runnerFiles.TestRunner@6574b225]" name="tearDownClass" is-config="true" duration-ms="76" started-at="2019-11-13T15:30:43Z" finished-at="2019-11-13T15:30:43Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.TestRunner@5afa04c]" name="runScenario" duration-ms="26081" started-at="2019-11-17T16:44:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-17T16:44:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As customer Jack wants to see expense charts for year 2018 and 2019"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As an existing customer verify the UI and Functionality of the login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.TestRunner@5afa04c]" name="runScenario" duration-ms="18574" started-at="2019-11-17T16:44:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-17T16:44:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As an existing customer Mr John is at login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As an existing customer verify the UI and Functionality of the login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runnerFiles.TestRunner@5afa04c]" name="tearDownClass" is-config="true" duration-ms="51" started-at="2019-11-17T16:45:10Z" finished-at="2019-11-17T16:45:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
