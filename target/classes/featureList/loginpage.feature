@@ -53,31 +53,6 @@ Feature: As an existing customer verify the UI and Functionality of the login pa
     And clicks on login button
     Then user is logged in by comparing dashboard layout
 
-  @selenium
-  Scenario: As customer Jack wants to sort dashboard table in ascending order of amounts
-    And enter username "username" in username field
-    And enter password "password" in password field
-    And clicks on login button
-    And clicks on amount tab
-    Then amounts are in ascending order
-
-  @applitools
-  Scenario: As customer Jack wants to sort dashboard table in ascending order of amounts
-    And enter username "username" in username field
-    And enter password "password" in password field
-    And clicks on login button
-    And clicks on amount tab
-    Then compare sorted data using applittols
-
-  @applitools
-  Scenario: As customer Jack wants to see expense charts for year 2018 and 2019
-    And enter username "username" in username field
-    And enter password "password" in password field
-    And clicks on login button
-    And click on show expense chart link
-    Then compare chart data using applittols
-    And click on show data for next year button
-    Then assert new chart data shown using applittols
 
 
 

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3398251597,
+              "duration": 3486401776,
               "status": "passed"
             },
             "line": 4,
@@ -24,15 +24,15 @@
         ]
       },
       {
-        "start_timestamp": "2019-11-17T16:44:30.561Z",
-        "line": 21,
-        "name": "As an existing customer Mr John is at login page",
+        "start_timestamp": "2019-11-17T16:50:50.193Z",
+        "line": 14,
+        "name": "As customer Jack wants to sort dashboard table in ascending order of amounts",
         "description": "",
-        "id": "as-an-existing-customer-verify-the-ui-and-functionality-of-the-login-page;as-an-existing-customer-mr-john-is-at-login-page",
+        "id": "as-a-customer-verify-the-sort-functionality-available-in-dashboard;as-customer-jack-wants-to-sort-dashboard-table-in-ascending-order-of-amounts",
         "after": [
           {
             "result": {
-              "duration": 442216348,
+              "duration": 427749362,
               "status": "passed"
             },
             "match": {
@@ -45,7 +45,293 @@
         "steps": [
           {
             "result": {
-              "duration": 14623488691,
+              "duration": 332042066,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "enter username \"username\" in username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterUsernameInUsernameField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130720333,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enter password \"password\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterPasswordInPasswordField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1585766842,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "clicks on login button",
+            "match": {
+              "location": "loginPageSteps.clicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83451535,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "clicks on amount tab",
+            "match": {
+              "location": "dashboardSteps.clocksOnAmountTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13335084851,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "compare sorted data using applittols",
+            "match": {
+              "location": "dashboardSteps.compareSortedDataUsingApplittols()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@applitools"
+          }
+        ]
+      }
+    ],
+    "name": "As a customer verify the sort Functionality available in dashboard",
+    "description": "",
+    "id": "as-a-customer-verify-the-sort-functionality-available-in-dashboard",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/featureList/amountSort.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3482599697,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Jack is on the login page",
+            "match": {
+              "location": "loginPageSteps.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-11-17T16:50:50.193Z",
+        "line": 6,
+        "name": "As customer Jack wants to see expense charts for year 2018 and 2019",
+        "description": "",
+        "id": "as-customer-verify-the-chart-functionality-available-in-dashboard;as-customer-jack-wants-to-see-expense-charts-for-year-2018-and-2019",
+        "after": [
+          {
+            "result": {
+              "duration": 452685743,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 327485225,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter username \"username\" in username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterUsernameInUsernameField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135814416,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enter password \"password\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterPasswordInPasswordField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1598519616,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicks on login button",
+            "match": {
+              "location": "loginPageSteps.clicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 785613500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on show expense chart link",
+            "match": {
+              "location": "dashboardSteps.clickOnShowExpenceChartLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12806999038,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "compare chart data using applittols",
+            "match": {
+              "location": "dashboardSteps.compareChartDataUsingApplittols()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77666383,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on show data for next year button",
+            "match": {
+              "location": "dashboardSteps.clickOnShowDataForNextYearButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6577214663,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "assert new chart data shown using applittols",
+            "match": {
+              "location": "dashboardSteps.assertChartDataShownUsingApplittols()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@applitools"
+          }
+        ]
+      }
+    ],
+    "name": "As customer verify the Chart Functionality available in dashboard",
+    "description": "",
+    "id": "as-customer-verify-the-chart-functionality-available-in-dashboard",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/featureList/chart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3485919557,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Jack is on the login page",
+            "match": {
+              "location": "loginPageSteps.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-11-17T16:50:50.193Z",
+        "line": 21,
+        "name": "As an existing customer Mr John is at login page",
+        "description": "",
+        "id": "as-an-existing-customer-verify-the-ui-and-functionality-of-the-login-page;as-an-existing-customer-mr-john-is-at-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 470961369,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14671313686,
               "status": "passed"
             },
             "line": 22,
@@ -71,7 +357,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3381997750,
+              "duration": 3595104279,
               "status": "passed"
             },
             "line": 4,
@@ -84,7 +370,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-11-17T16:44:30.561Z",
+        "start_timestamp": "2019-11-17T16:50:50.193Z",
         "line": 41,
         "name": "Login page functionality using applitools",
         "description": "",
@@ -92,7 +378,7 @@
         "after": [
           {
             "result": {
-              "duration": 490938219,
+              "duration": 505541589,
               "status": "passed"
             },
             "match": {
@@ -105,7 +391,7 @@
         "steps": [
           {
             "result": {
-              "duration": 209727212,
+              "duration": 160703235,
               "status": "passed"
             },
             "line": 42,
@@ -117,7 +403,7 @@
           },
           {
             "result": {
-              "duration": 14599837908,
+              "duration": 14240487076,
               "status": "passed"
             },
             "line": 43,
@@ -129,7 +415,7 @@
           },
           {
             "result": {
-              "duration": 168593833,
+              "duration": 135162666,
               "status": "passed"
             },
             "line": 44,
@@ -147,7 +433,7 @@
           },
           {
             "result": {
-              "duration": 51575756,
+              "duration": 33517900,
               "status": "passed"
             },
             "line": 45,
@@ -159,7 +445,7 @@
           },
           {
             "result": {
-              "duration": 5699773839,
+              "duration": 5651811472,
               "status": "passed"
             },
             "line": 46,
@@ -171,7 +457,7 @@
           },
           {
             "result": {
-              "duration": 75037252,
+              "duration": 19071893,
               "status": "passed"
             },
             "line": 47,
@@ -183,7 +469,7 @@
           },
           {
             "result": {
-              "duration": 163883665,
+              "duration": 67915367,
               "status": "passed"
             },
             "line": 48,
@@ -201,7 +487,7 @@
           },
           {
             "result": {
-              "duration": 32421175,
+              "duration": 36832218,
               "status": "passed"
             },
             "line": 49,
@@ -213,7 +499,7 @@
           },
           {
             "result": {
-              "duration": 5533990275,
+              "duration": 5284335631,
               "status": "passed"
             },
             "line": 50,
@@ -225,7 +511,7 @@
           },
           {
             "result": {
-              "duration": 207770891,
+              "duration": 184244766,
               "status": "passed"
             },
             "line": 51,
@@ -243,7 +529,7 @@
           },
           {
             "result": {
-              "duration": 72631879,
+              "duration": 82702960,
               "status": "passed"
             },
             "line": 52,
@@ -261,7 +547,7 @@
           },
           {
             "result": {
-              "duration": 2107803368,
+              "duration": 1865987798,
               "status": "passed"
             },
             "line": 53,
@@ -273,277 +559,13 @@
           },
           {
             "result": {
-              "duration": 7011082998,
+              "duration": 6405911804,
               "status": "passed"
             },
             "line": 54,
             "name": "user is logged in by comparing dashboard layout",
             "match": {
               "location": "loginPageSteps.userIsLoggedInByComparingDashboardLayout()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@applitools"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3368200576,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Jack is on the login page",
-            "match": {
-              "location": "loginPageSteps.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-11-17T16:44:30.561Z",
-        "line": 65,
-        "name": "As customer Jack wants to sort dashboard table in ascending order of amounts",
-        "description": "",
-        "id": "as-an-existing-customer-verify-the-ui-and-functionality-of-the-login-page;as-customer-jack-wants-to-sort-dashboard-table-in-ascending-order-of-amounts",
-        "after": [
-          {
-            "result": {
-              "duration": 448948826,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.AfterSteps()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 383457910,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "enter username \"username\" in username field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 15
-                }
-              ],
-              "location": "loginPageSteps.enterUsernameInUsernameField(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 227396647,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "enter password \"password\" in password field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"password\"",
-                  "offset": 15
-                }
-              ],
-              "location": "loginPageSteps.enterPasswordInPasswordField(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1696874417,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "clicks on login button",
-            "match": {
-              "location": "loginPageSteps.clicksOnLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 136242216,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "clicks on amount tab",
-            "match": {
-              "location": "dashboardSteps.clocksOnAmountTab()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13328390498,
-              "status": "passed"
-            },
-            "line": 70,
-            "name": "compare sorted data using applittols",
-            "match": {
-              "location": "dashboardSteps.compareSortedDataUsingApplittols()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@applitools"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3575278687,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Jack is on the login page",
-            "match": {
-              "location": "loginPageSteps.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-11-17T16:44:30.561Z",
-        "line": 73,
-        "name": "As customer Jack wants to see expense charts for year 2018 and 2019",
-        "description": "",
-        "id": "as-an-existing-customer-verify-the-ui-and-functionality-of-the-login-page;as-customer-jack-wants-to-see-expense-charts-for-year-2018-and-2019",
-        "after": [
-          {
-            "result": {
-              "duration": 425321253,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.AfterSteps()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 293264917,
-              "status": "passed"
-            },
-            "line": 74,
-            "name": "enter username \"username\" in username field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 15
-                }
-              ],
-              "location": "loginPageSteps.enterUsernameInUsernameField(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 226943838,
-              "status": "passed"
-            },
-            "line": 75,
-            "name": "enter password \"password\" in password field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"password\"",
-                  "offset": 15
-                }
-              ],
-              "location": "loginPageSteps.enterPasswordInPasswordField(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1636534428,
-              "status": "passed"
-            },
-            "line": 76,
-            "name": "clicks on login button",
-            "match": {
-              "location": "loginPageSteps.clicksOnLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 777081691,
-              "status": "passed"
-            },
-            "line": 77,
-            "name": "click on show expense chart link",
-            "match": {
-              "location": "dashboardSteps.clickOnShowExpenceChartLink()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 12385328993,
-              "status": "passed"
-            },
-            "line": 78,
-            "name": "compare chart data using applittols",
-            "match": {
-              "location": "dashboardSteps.compareChartDataUsingApplittols()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 90407331,
-              "status": "passed"
-            },
-            "line": 79,
-            "name": "click on show data for next year button",
-            "match": {
-              "location": "dashboardSteps.clickOnShowDataForNextYearButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6560432081,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "assert new chart data shown using applittols",
-            "match": {
-              "location": "dashboardSteps.assertChartDataShownUsingApplittols()"
             },
             "keyword": "Then "
           }
