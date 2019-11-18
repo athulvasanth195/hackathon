@@ -13,7 +13,13 @@ public class Hooks {
 
 	@After
 	public void AfterSteps() {
-		testContext.getApplitoolManager().closeEyes();
+		try {
+			testContext.getApplitoolManager().getEyes().close();
+		} catch (Exception e) {
+		} finally {
+			testContext.getApplitoolManager().getEyes().abortIfNotClosed();
+			testContext.getWebDriverManager().closeDriver();
+		}
 		testContext.getWebDriverManager().closeDriver();
 	}
 

@@ -11,7 +11,139 @@
         "steps": [
           {
             "result": {
-              "duration": 3486401776,
+              "duration": 3657086784,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Jack is on the advertisement dashboard",
+            "match": {
+              "location": "dashboardSteps.jackIsOnTheAdvertisementDashboard()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-11-18T17:08:31.737Z",
+        "line": 6,
+        "name": "As business user Nick wants to assert the presence of advertisements in dashboard",
+        "description": "",
+        "id": "as-a-business-user-verify-the-presence-of-advertisements-in-dashboard;as-business-user-nick-wants-to-assert-the-presence-of-advertisements-in-dashboard",
+        "after": [
+          {
+            "result": {
+              "error_message": "com.applitools.eyes.exceptions.DiffsFoundException: Test \u0027Dashboard advertisements\u0027 of \u0027Hackathon\u0027 detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867791/00000251828203867666?accountId\u003dqoGJj8hxc0mEZSOJID-FVg~~\n\tat com.applitools.eyes.EyesBase.close(EyesBase.java:510)\n\tat com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:155)\n\tat stepDefinitions.Hooks.AfterSteps(Hooks.java:17)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:69)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+              "duration": 1231607715,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 461813665,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter username \"username\" in username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterUsernameInUsernameField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211011952,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enter password \"password\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginPageSteps.enterPasswordInPasswordField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1909771551,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicks on login button",
+            "match": {
+              "location": "loginPageSteps.clicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23454440905,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "advertisements are present",
+            "match": {
+              "location": "dashboardSteps.advertisementIsPresent()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8191609244,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "advertisement are the same",
+            "match": {
+              "location": "dashboardSteps.advertisementIsSame()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@applitools"
+          }
+        ]
+      }
+    ],
+    "name": "As a business user verify the presence of advertisements in dashboard",
+    "description": "",
+    "id": "as-a-business-user-verify-the-presence-of-advertisements-in-dashboard",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/featureList/advertisement.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3708438934,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +156,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-11-17T16:50:50.193Z",
+        "start_timestamp": "2019-11-18T17:08:31.737Z",
         "line": 14,
         "name": "As customer Jack wants to sort dashboard table in ascending order of amounts",
         "description": "",
@@ -32,8 +164,9 @@
         "after": [
           {
             "result": {
-              "duration": 427749362,
-              "status": "passed"
+              "error_message": "com.applitools.eyes.exceptions.DiffsFoundException: Test \u0027Dashboard amount sort functionality\u0027 of \u0027Hackathon\u0027 detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867777/00000251828203867667?accountId\u003dqoGJj8hxc0mEZSOJID-FVg~~\n\tat com.applitools.eyes.EyesBase.close(EyesBase.java:510)\n\tat com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:155)\n\tat stepDefinitions.Hooks.AfterSteps(Hooks.java:17)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:69)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+              "duration": 449968034,
+              "status": "failed"
             },
             "match": {
               "location": "Hooks.AfterSteps()"
@@ -45,7 +178,7 @@
         "steps": [
           {
             "result": {
-              "duration": 332042066,
+              "duration": 417243935,
               "status": "passed"
             },
             "line": 15,
@@ -63,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 130720333,
+              "duration": 230982738,
               "status": "passed"
             },
             "line": 16,
@@ -81,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 1585766842,
+              "duration": 3019952975,
               "status": "passed"
             },
             "line": 17,
@@ -93,7 +226,7 @@
           },
           {
             "result": {
-              "duration": 83451535,
+              "duration": 93900333,
               "status": "passed"
             },
             "line": 18,
@@ -105,7 +238,7 @@
           },
           {
             "result": {
-              "duration": 13335084851,
+              "duration": 22171564254,
               "status": "passed"
             },
             "line": 19,
@@ -142,7 +275,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3482599697,
+              "duration": 3819655095,
               "status": "passed"
             },
             "line": 4,
@@ -155,7 +288,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-11-17T16:50:50.193Z",
+        "start_timestamp": "2019-11-18T17:08:31.737Z",
         "line": 6,
         "name": "As customer Jack wants to see expense charts for year 2018 and 2019",
         "description": "",
@@ -163,8 +296,9 @@
         "after": [
           {
             "result": {
-              "duration": 452685743,
-              "status": "passed"
+              "error_message": "com.applitools.eyes.exceptions.DiffsFoundException: Test \u0027Chart data 2018 and 2019\u0027 of \u0027Hackathon\u0027 detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867793/00000251828203867668?accountId\u003dqoGJj8hxc0mEZSOJID-FVg~~\n\tat com.applitools.eyes.EyesBase.close(EyesBase.java:510)\n\tat com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:155)\n\tat stepDefinitions.Hooks.AfterSteps(Hooks.java:17)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:69)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+              "duration": 1195482075,
+              "status": "failed"
             },
             "match": {
               "location": "Hooks.AfterSteps()"
@@ -176,7 +310,7 @@
         "steps": [
           {
             "result": {
-              "duration": 327485225,
+              "duration": 393119773,
               "status": "passed"
             },
             "line": 7,
@@ -194,7 +328,7 @@
           },
           {
             "result": {
-              "duration": 135814416,
+              "duration": 202336508,
               "status": "passed"
             },
             "line": 8,
@@ -212,7 +346,7 @@
           },
           {
             "result": {
-              "duration": 1598519616,
+              "duration": 3951622380,
               "status": "passed"
             },
             "line": 9,
@@ -224,7 +358,7 @@
           },
           {
             "result": {
-              "duration": 785613500,
+              "duration": 720658105,
               "status": "passed"
             },
             "line": 10,
@@ -236,7 +370,7 @@
           },
           {
             "result": {
-              "duration": 12806999038,
+              "duration": 19746225098,
               "status": "passed"
             },
             "line": 11,
@@ -248,7 +382,7 @@
           },
           {
             "result": {
-              "duration": 77666383,
+              "duration": 124285153,
               "status": "passed"
             },
             "line": 12,
@@ -260,7 +394,7 @@
           },
           {
             "result": {
-              "duration": 6577214663,
+              "duration": 9323673395,
               "status": "passed"
             },
             "line": 13,
@@ -297,7 +431,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3485919557,
+              "duration": 3660861279,
               "status": "passed"
             },
             "line": 4,
@@ -310,7 +444,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-11-17T16:50:50.193Z",
+        "start_timestamp": "2019-11-18T17:08:31.736Z",
         "line": 21,
         "name": "As an existing customer Mr John is at login page",
         "description": "",
@@ -318,8 +452,9 @@
         "after": [
           {
             "result": {
-              "duration": 470961369,
-              "status": "passed"
+              "error_message": "com.applitools.eyes.exceptions.DiffsFoundException: Test \u0027login UI components\u0027 of \u0027Hackathon\u0027 detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867792/00000251828203867667?accountId\u003dqoGJj8hxc0mEZSOJID-FVg~~\n\tat com.applitools.eyes.EyesBase.close(EyesBase.java:510)\n\tat com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:155)\n\tat stepDefinitions.Hooks.AfterSteps(Hooks.java:17)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:69)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+              "duration": 553997732,
+              "status": "failed"
             },
             "match": {
               "location": "Hooks.AfterSteps()"
@@ -331,7 +466,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14671313686,
+              "duration": 22929154304,
               "status": "passed"
             },
             "line": 22,
@@ -357,7 +492,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3595104279,
+              "duration": 3697453275,
               "status": "passed"
             },
             "line": 4,
@@ -370,7 +505,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-11-17T16:50:50.193Z",
+        "start_timestamp": "2019-11-18T17:08:31.737Z",
         "line": 41,
         "name": "Login page functionality using applitools",
         "description": "",
@@ -378,8 +513,9 @@
         "after": [
           {
             "result": {
-              "duration": 505541589,
-              "status": "passed"
+              "error_message": "com.applitools.eyes.exceptions.DiffsFoundException: Test \u0027Login page username and password empty\u0027 of \u0027Hackathon\u0027 detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867759/00000251828203867502?accountId\u003dqoGJj8hxc0mEZSOJID-FVg~~\n\tat com.applitools.eyes.EyesBase.close(EyesBase.java:510)\n\tat com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)\n\tat com.applitools.eyes.selenium.Eyes.close(Eyes.java:155)\n\tat stepDefinitions.Hooks.AfterSteps(Hooks.java:17)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:69)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+              "duration": 1480208954,
+              "status": "failed"
             },
             "match": {
               "location": "Hooks.AfterSteps()"
@@ -391,7 +527,7 @@
         "steps": [
           {
             "result": {
-              "duration": 160703235,
+              "duration": 299572689,
               "status": "passed"
             },
             "line": 42,
@@ -403,7 +539,7 @@
           },
           {
             "result": {
-              "duration": 14240487076,
+              "duration": 22726319598,
               "status": "passed"
             },
             "line": 43,
@@ -415,7 +551,7 @@
           },
           {
             "result": {
-              "duration": 135162666,
+              "duration": 204968613,
               "status": "passed"
             },
             "line": 44,
@@ -433,7 +569,7 @@
           },
           {
             "result": {
-              "duration": 33517900,
+              "duration": 84917140,
               "status": "passed"
             },
             "line": 45,
@@ -445,7 +581,7 @@
           },
           {
             "result": {
-              "duration": 5651811472,
+              "duration": 7195350716,
               "status": "passed"
             },
             "line": 46,
@@ -457,7 +593,7 @@
           },
           {
             "result": {
-              "duration": 19071893,
+              "duration": 23613707,
               "status": "passed"
             },
             "line": 47,
@@ -469,7 +605,7 @@
           },
           {
             "result": {
-              "duration": 67915367,
+              "duration": 146439030,
               "status": "passed"
             },
             "line": 48,
@@ -487,7 +623,7 @@
           },
           {
             "result": {
-              "duration": 36832218,
+              "duration": 56943921,
               "status": "passed"
             },
             "line": 49,
@@ -499,7 +635,7 @@
           },
           {
             "result": {
-              "duration": 5284335631,
+              "duration": 7000425236,
               "status": "passed"
             },
             "line": 50,
@@ -511,7 +647,7 @@
           },
           {
             "result": {
-              "duration": 184244766,
+              "duration": 120767182,
               "status": "passed"
             },
             "line": 51,
@@ -529,7 +665,7 @@
           },
           {
             "result": {
-              "duration": 82702960,
+              "duration": 109870405,
               "status": "passed"
             },
             "line": 52,
@@ -547,7 +683,7 @@
           },
           {
             "result": {
-              "duration": 1865987798,
+              "duration": 4090903699,
               "status": "passed"
             },
             "line": 53,
@@ -559,7 +695,7 @@
           },
           {
             "result": {
-              "duration": 6405911804,
+              "duration": 13686629990,
               "status": "passed"
             },
             "line": 54,

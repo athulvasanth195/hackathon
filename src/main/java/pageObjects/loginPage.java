@@ -25,7 +25,6 @@ public class loginPage {
         batch2=new BatchInfo("Login page functionality");
     }
 
-
     @FindBy(className = "auth-header")
     private WebElement header_login;
     @FindBy(xpath = "//a[@href=\"index.html\"]//img")
@@ -59,11 +58,7 @@ public class loginPage {
 
 
     public void get_login_page() {
-        driver.get("https://demo.applitools.com/hackathon.html");
-    }
-
-    public void assertLoginUrl() {
-        Assert.assertTrue(driver.getCurrentUrl().contentEquals("https://demo.applitools.com/hackathon.html"));
+                driver.get("https://demo.applitools.com/hackathonV2.html");
     }
 
     public void WhetherHeaderIsPresentInThePage(String header) {

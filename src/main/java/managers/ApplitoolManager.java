@@ -16,11 +16,4 @@ public class ApplitoolManager {
         eyes.setApiKey("DIiknoan105aq0JdMeQsmws55uWAAm0DN6aOsbEeqTMJk110");
         return eyes;
     }
-    public void closeEyes() {
-        try {
-            eyes.close();
-        }finally{
-            eyes.abortIfNotClosed();
-        }
-    }
 }

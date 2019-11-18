@@ -18,6 +18,8 @@ public class dashboard {
     private Eyes eyes;
     private static BatchInfo batch3;
     private static BatchInfo batch4;
+    private static BatchInfo batch5;
+
 
     public dashboard(WebDriver driver,Eyes eyes) {
         this.driver = driver;
@@ -27,6 +29,7 @@ public class dashboard {
 
         batch3=new BatchInfo("Table Sort Test");
         batch4=new BatchInfo("Canvas Chart Test");
+        batch5=new BatchInfo("Advertisement presence Test");
     }
     @FindBy(id = "amount")
     private WebElement tab_amount;
@@ -81,5 +84,23 @@ public class dashboard {
         eyes.setBatch(batch4);
         eyes.setForceFullPageScreenshot(true);
         eyes.checkWindow("chart 2019");
+    }
+
+    public void OnTheAdvertisementDashboard() {
+            driver.get("https://demo.applitools.com/hackathonV2.html?showAd=true");
+    }
+
+    public void advIsPresent() {
+        eyes.setBatch(batch5);
+        eyes.setForceFullPageScreenshot(true);
+        eyes.open(driver, "Hackathon",
+                "Dashboard advertisements");
+        eyes.checkWindow("Missing gifs");
+    }
+
+    public void advIsSame() {
+        eyes.setBatch(batch5);
+        eyes.setForceFullPageScreenshot(true);
+        eyes.checkWindow("different gifs");
     }
 }

@@ -1,9 +1,9 @@
-pageObjects/loginPage.class
 managers/ApplitoolManager.class
 cucumber/TestContext.class
 managers/PageObjectManager.class
 pageObjects/dashboard.class
-stepDefinitions/Hooks.class
 stepDefinitions/loginPageSteps.class
 managers/WebDriverManager.class
 stepDefinitions/dashboardSteps.class
+pageObjects/loginPage.class
+stepDefinitions/Hooks.class

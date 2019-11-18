@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import cucumber.TestContext;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pageObjects.dashboard;
 
@@ -48,5 +49,20 @@ public class dashboardSteps {
     @Then("assert new chart data shown using applittols")
     public void assertChartDataShownUsingApplittols() {
         dashboard.newChartDataShownUsingApplittols();
+    }
+
+    @Given("Jack is on the advertisement dashboard")
+    public void jackIsOnTheAdvertisementDashboard() {
+        dashboard.OnTheAdvertisementDashboard();
+    }
+
+    @Then("advertisements are present")
+    public void advertisementIsPresent() {
+        dashboard.advIsPresent();
+    }
+
+    @And("advertisement are the same")
+    public void advertisementIsSame() {
+        dashboard.advIsSame();
     }
 }
