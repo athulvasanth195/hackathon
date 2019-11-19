@@ -13,4 +13,7 @@ For running the tests use the below commands
 mvn test -Dappversion=V1   ----------------------------- for test against version 1 of the ACME app
 mvn test -Dappversion=V2   ----------------------------- for test against version 2 of the ACME app
 
-Applitools result dashboard URL: 
+Applitools result dashboard URL: https://eyes.applitools.com/app/test-results/?accountId=qoGJj8hxc0mEZSOJID-FVg~~
+
+Thanks You.
+Athul
