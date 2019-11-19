@@ -3,7 +3,7 @@
 Hi Applittols;
 
 The test is written using selenium and cucumber with testNg as test runner.
-Normal selenium tests are specified by tag "@selenium" and applitools tests by tag "applitools"
+Normal selenium tests are specified by tag "@selenium" and applitools tests by tag "@applitools"
 
 By default it will excute both normal and applitools tests.
 If you only want to view the applitools tests please add "@applitools" tag in testrunner.
