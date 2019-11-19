@@ -15,14 +15,16 @@ public class loginPage {
     private static BatchInfo batch1;
     private static BatchInfo batch2;
 
-    public loginPage(WebDriver driver,Eyes eyes) {
+    String url = System.getProperty("appversion");
+
+    public loginPage(WebDriver driver, Eyes eyes) {
         this.driver = driver;
         this.eyes = eyes;
 
         PageFactory.initElements(driver, this);
 
-        batch1=new BatchInfo("Login page UI");
-        batch2=new BatchInfo("Login page functionality");
+        batch1 = new BatchInfo("Login page UI");
+        batch2 = new BatchInfo("Login page functionality");
     }
 
     @FindBy(className = "auth-header")
@@ -58,7 +60,11 @@ public class loginPage {
 
 
     public void get_login_page() {
-                driver.get("https://demo.applitools.com/hackathonV2.html");
+        if (url.contentEquals("V1")) {
+            driver.get("https://demo.applitools.com/hackathon.html");
+        } else if (url.contentEquals("V2")) {
+            driver.get("https://demo.applitools.com/hackathonV2.html");
+        }
     }
 
     public void WhetherHeaderIsPresentInThePage(String header) {
@@ -118,7 +124,7 @@ public class loginPage {
     }
 
     public void LoginPageScreenshotUsingApplitools() {
-       eyes.setBatch(batch1);
+        eyes.setBatch(batch1);
         eyes.setForceFullPageScreenshot(true);
         eyes.open(driver, "Hackathon",
                 "login UI components");
@@ -155,36 +161,36 @@ public class loginPage {
     }
 
     public void assertHomePageUrl() {
-        Assert.assertEquals(driver.getCurrentUrl(),"https://demo.applitools.com/hackathonApp.html","User login failed. dashbord URL mismatch found");
+        Assert.assertEquals(driver.getCurrentUrl(), "https://demo.applitools.com/hackathonApp.html", "User login failed. dashbord URL mismatch found");
     }
 
     public void PasswordAndUsernameEmptyScreenshot() {
-       eyes.setBatch(batch2);
-       eyes.setForceFullPageScreenshot(true);
-       eyes.open(driver, "Hackathon",
+        eyes.setBatch(batch2);
+        eyes.setForceFullPageScreenshot(true);
+        eyes.open(driver, "Hackathon",
                 "Login page username and password empty");
-       eyes.checkWindow("username and password empty");
+        eyes.checkWindow("username and password empty");
 
     }
 
     public void PasswordIsMandatoryScreenshot() {
-       eyes.setBatch(batch2);
-       eyes.setForceFullPageScreenshot(true);
-       eyes.checkWindow("password empty");
+        eyes.setBatch(batch2);
+        eyes.setForceFullPageScreenshot(true);
+        eyes.checkWindow("password empty");
 
     }
 
     public void UsenameIsMandatoryScreenshot() {
-       eyes.setBatch(batch2);
-       eyes.setForceFullPageScreenshot(true);
-       eyes.checkWindow("username empty");
+        eyes.setBatch(batch2);
+        eyes.setForceFullPageScreenshot(true);
+        eyes.checkWindow("username empty");
 
     }
 
     public void LoggedInByComparingDashboardLayout() {
-       eyes.setBatch(batch2);
-       eyes.setForceFullPageScreenshot(true);
-       eyes.checkWindow("dashboard layout");
+        eyes.setBatch(batch2);
+        eyes.setForceFullPageScreenshot(true);
+        eyes.checkWindow("dashboard layout");
 
     }
 

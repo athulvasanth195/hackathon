@@ -11,3 +11,6 @@ And click on show expense chart link
 Then compare chart data using applittols
 And click on show data for next year button
 Then assert new chart data shown using applittols
+
+
+  #Its very hard to test canvas using only selenium

@@ -1,9 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 61.411 sec <<< FAILURE!
-runScenario(runnerFiles.TestRunner)  Time elapsed: 27.273 sec  <<< FAILURE!
-com.applitools.eyes.exceptions.DiffsFoundException: Test 'login UI components' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867792/00000251828203867667?accountId=qoGJj8hxc0mEZSOJID-FVg~~
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 70.529 sec <<< FAILURE!
+runScenario(runnerFiles.TestRunner)  Time elapsed: 4.192 sec  <<< FAILURE!
+java.lang.AssertionError: Login page header text mismatch found expected [Login Form] but found [Logout Form]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at pageObjects.loginPage.WhetherHeaderIsPresentInThePage(loginPage.java:72)
+	at stepDefinitions.loginPageSteps.checkWhetherHeaderIsPresentInThePage(loginPageSteps.java:25)
+	at ✽.header "Login Form" is present in the page(file:src/main/resources/featureList/loginpage.feature:8)
+
+runScenario(runnerFiles.TestRunner)  Time elapsed: 3.265 sec  <<< FAILURE!
+java.lang.AssertionError: Amount sort failed.Values are in random order expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at pageObjects.dashboard.AmountsAreInAccendingOrder(dashboard.java:54)
+	at stepDefinitions.dashboardSteps.assertAmountsAreInAscendingOrder(dashboardSteps.java:26)
+	at ✽.amounts are in ascending order(file:src/main/resources/featureList/amountSort.feature:11)
+
+runScenario(runnerFiles.TestRunner)  Time elapsed: 3.283 sec  <<< FAILURE!
+java.lang.AssertionError: username and password empty warning mismatch found expected [Both Username and Password must be present] but found [Please enter both username and password]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at pageObjects.loginPage.fieldEmtyWarmingIsShown(loginPage.java:141)
+	at stepDefinitions.loginPageSteps.passwordAndUsernameEmptyErrorIsShown(loginPageSteps.java:90)
+	at ✽.password and username empty "Both Username and Password must be present" error is shown(file:src/main/resources/featureList/loginpage.feature:27)
+
+runScenario(runnerFiles.TestRunner)  Time elapsed: 18.033 sec  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'login UI components' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828125472261/00000251828125472074?accountId=qoGJj8hxc0mEZSOJID-FVg~~
 	at com.applitools.eyes.EyesBase.close(EyesBase.java:510)
 	at com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)
 	at com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)
@@ -40,8 +71,8 @@ com.applitools.eyes.exceptions.DiffsFoundException: Test 'login UI components' o
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-runScenario(runnerFiles.TestRunner)  Time elapsed: 30.205 sec  <<< FAILURE!
-com.applitools.eyes.exceptions.DiffsFoundException: Test 'Dashboard amount sort functionality' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867777/00000251828203867667?accountId=qoGJj8hxc0mEZSOJID-FVg~~
+runScenario(runnerFiles.TestRunner)  Time elapsed: 19.803 sec  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'Dashboard amount sort functionality' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828125472267/00000251828125472064?accountId=qoGJj8hxc0mEZSOJID-FVg~~
 	at com.applitools.eyes.EyesBase.close(EyesBase.java:510)
 	at com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)
 	at com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)
@@ -78,8 +109,8 @@ com.applitools.eyes.exceptions.DiffsFoundException: Test 'Dashboard amount sort 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-runScenario(runnerFiles.TestRunner)  Time elapsed: 39.259 sec  <<< FAILURE!
-com.applitools.eyes.exceptions.DiffsFoundException: Test 'Dashboard advertisements' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867791/00000251828203867666?accountId=qoGJj8hxc0mEZSOJID-FVg~~
+runScenario(runnerFiles.TestRunner)  Time elapsed: 28.091 sec  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'Chart data 2018 and 2019' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828125472269/00000251828125472081?accountId=qoGJj8hxc0mEZSOJID-FVg~~
 	at com.applitools.eyes.EyesBase.close(EyesBase.java:510)
 	at com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)
 	at com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)
@@ -116,8 +147,8 @@ com.applitools.eyes.exceptions.DiffsFoundException: Test 'Dashboard advertisemen
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-runScenario(runnerFiles.TestRunner)  Time elapsed: 39.594 sec  <<< FAILURE!
-com.applitools.eyes.exceptions.DiffsFoundException: Test 'Chart data 2018 and 2019' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867793/00000251828203867668?accountId=qoGJj8hxc0mEZSOJID-FVg~~
+runScenario(runnerFiles.TestRunner)  Time elapsed: 28.395 sec  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'Dashboard advertisements' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828125472266/00000251828125472078?accountId=qoGJj8hxc0mEZSOJID-FVg~~
 	at com.applitools.eyes.EyesBase.close(EyesBase.java:510)
 	at com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)
 	at com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)
@@ -154,8 +185,8 @@ com.applitools.eyes.exceptions.DiffsFoundException: Test 'Chart data 2018 and 20
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-runScenario(runnerFiles.TestRunner)  Time elapsed: 61.037 sec  <<< FAILURE!
-com.applitools.eyes.exceptions.DiffsFoundException: Test 'Login page username and password empty' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828203867759/00000251828203867502?accountId=qoGJj8hxc0mEZSOJID-FVg~~
+runScenario(runnerFiles.TestRunner)  Time elapsed: 59.415 sec  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'Login page username and password empty' of 'Hackathon' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251828125471837/00000251828125471696?accountId=qoGJj8hxc0mEZSOJID-FVg~~
 	at com.applitools.eyes.EyesBase.close(EyesBase.java:510)
 	at com.applitools.eyes.selenium.SeleniumEyes.close(SeleniumEyes.java:1903)
 	at com.applitools.eyes.selenium.Eyes.close(Eyes.java:541)

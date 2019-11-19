@@ -20,7 +20,7 @@ public class dashboard {
     private static BatchInfo batch4;
     private static BatchInfo batch5;
 
-
+    String url = System.getProperty("appversion");
     public dashboard(WebDriver driver,Eyes eyes) {
         this.driver = driver;
         this.eyes = eyes;
@@ -48,7 +48,6 @@ public class dashboard {
     public void AmountsAreInAccendingOrder() {
         List<Integer> amounts = new ArrayList<Integer>();
         for (WebElement amount: values_amount) {
-            System.out.println(amount.getText().replaceAll(" USD","").replaceAll(" ",""));
             amounts.add((int)(Double.parseDouble(amount.getText().replaceAll(" USD","").replaceAll(" ","").replace(",",""))));
         }
         boolean sorted = Ordering.natural().isOrdered(amounts);
@@ -87,7 +86,11 @@ public class dashboard {
     }
 
     public void OnTheAdvertisementDashboard() {
+        if (url.contentEquals("V1")) {
+            driver.get("https://demo.applitools.com/hackathon.html?showAd=true");
+        } else if (url.contentEquals("V2")) {
             driver.get("https://demo.applitools.com/hackathonV2.html?showAd=true");
+        }
     }
 
     public void advIsPresent() {

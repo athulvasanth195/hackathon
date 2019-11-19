@@ -9,3 +9,5 @@ Feature: As a business user verify the presence of advertisements in dashboard
     And clicks on login button
     Then advertisements are present
     And advertisement are the same
+
+    # with selenium i usually use ashot screenshot comparison library for these cases.Its not easy to achieve the same effect with pure selenium.
